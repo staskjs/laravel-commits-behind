@@ -1,0 +1,26 @@
+{
+    "name": "staskjs/laravel-commits-behind",
+    "description": "Adds artisan command and routes to determine number of commits that current project is behind develop branch",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Stas Karpov",
+            "email": "staskjs@mail.ru"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+        ],
+        "psr-4": {
+            "Staskjs\\CommitsBehind\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Staskjs\\CommitsBehind\\CommitsBehindServiceProvider"
+            ]
+        }
+    }
+
+}
