@@ -24,6 +24,6 @@ class CommitsBehindServiceProvider extends ServiceProvider
         $this->commands([
             Commands\CommitsBehind::class,
         ]);
-        \Route::get('/debug/commits-behind', 'Staskjs\LaravelUtils\CommitsBehindController@show');
+        \Route::get('/debug/commits-behind', 'Staskjs\CommitsBehind\CommitsBehindController@show');
     }
 }
